@@ -83,7 +83,7 @@ function renderProducts(products: Product[]) {
       <div class="product-details">
         <p class="product-title">${product.title}</p>
         <div class="line"></div>
-        <div class="add-to-cart__container">
+        <div class="add-to-cart-container">
           <p class="product-price">${product.price.toFixed(2)} $</p>
           <button class="add-to-cart" onclick="animateButton(event)">Add to cart</button>
         </div>

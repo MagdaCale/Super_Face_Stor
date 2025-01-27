@@ -2,6 +2,8 @@
 
 Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animationen.
 
+![screenshot](/public/bild.png)
+
 ## Funktionen
 
 - Dynamische Produktkarten mit Bildern und Beschreibungen
@@ -23,11 +25,8 @@ Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animati
 
 1. Repository klonen:
 ```bash
-git clone [repository-url]
+git clone [repository-url]```
 
-
-## 📸 Vorschau
-![screenshot](/public/bild.png)
 
 
 src/
