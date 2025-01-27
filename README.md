@@ -21,14 +21,6 @@ Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animati
 - Vite als Build-Tool
 - Fake Store API für Produktdaten
 
-## Installation
-
-1. Repository klonen:
-```bash
-git clone [repository-url]```
-
-
-
 src/
   ├── main.ts       # Hauptlogik
   ├── style.css     # Styling
