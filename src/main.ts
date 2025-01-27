@@ -2,10 +2,10 @@ import { Product } from "./types"
 
 const searchInput = document.querySelector('input[type="text"]')!
 const sortSelect = document.querySelector('select')!
-const electronicsButton = document.querySelector('button:nth-child(3)')!
-const jewelleryButton = document.querySelector('button:nth-child(4)')!
-const mensClothingButton = document.querySelector('button:nth-child(5)')!
-const womensClothingButton = document.querySelector('button:nth-child(6)')!
+const electronicsButton = document.querySelector('#electronics-button')!
+const jewelleryButton = document.querySelector('#jewellery-button')!
+const mensClothingButton = document.querySelector('#mens-clothing-button')!
+const womensClothingButton = document.querySelector('#womens-clothing-button')!
 
 
 const API = "https://fakestoreapi.com/products"
