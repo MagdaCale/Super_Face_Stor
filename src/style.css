@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'gaffiti';
+  src: url('../public/font/TheoryGraffitiDemo-JpEYn.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #282222;
+  --color-primary-yellow: #fff941;
+  --color-primary-blue: #005de8;
+  --color-white: #ffffff;
+  --color-background: #ffffff;
+  --color-text: #2c3e50;
+  --color-border: #e1e1e1;
+  --spacing-base: 1rem;
+  --border-radius: 5px;
+  --container-max-width: 1440px;
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --transition-base: 0.2s ease-in-out;
+  --line: rgba(0, 0, 0, 0.084);
+}
+
+/* Base Styles */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: calc(var(--spacing-base) * 1.25);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header h1 {
+  font-family: "gaffiti";
+  font-size: 5rem;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--line);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-base);
+  padding: calc(var(--spacing-base) * 1.25);
+  background-color: var(--color-primary-yellow);
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: calc(var(--spacing-base) * 0.625);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.filters input[type="text"] {
+  width: 200px;
+}
+
+.filters button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: calc(var(--spacing-base) * 0.625) calc(var(--spacing-base) * 0.9375);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+}
+
+.filters button:active {
+  background-color: var(--color-primary-blue);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px); 
+  gap: calc(var(--spacing-base) * 4);
+  padding: calc(var(--spacing-base) * 2);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  justify-content: center; 
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;  
+  height: 450px; 
+  padding: calc(var(--spacing-base) * 1.5);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-base);
+}
+
+
+.product-image-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  border-radius: calc(var(--border-radius) - 2px);
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-details {
+  margin-top: calc(var(--spacing-base) * 1.5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 0 0 auto;
+}
+
+.add-to-cart__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.add-to-cart {
+  padding: calc(var(--spacing-base) * 0.5) var(--spacing-base);
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:active {
+  background-color: var(--color-primary-blue);
+}
+
+
+@media (max-width: 768px) {
+  .product-grid {
+    gap: var(--spacing-base);
+    padding: var(--spacing-base);
+  }
+  
+  .filters {
+    flex-wrap: wrap;
+  }
+}
