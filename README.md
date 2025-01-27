@@ -21,11 +21,6 @@ Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animati
 - Vite als Build-Tool
 - Fake Store API für Produktdaten
 
-src/
-  ├── main.ts       # Hauptlogik
-  ├── style.css     # Styling
-  └── types.ts      # TypeScript Definitionen
-
 
 
 ## Nutzung
