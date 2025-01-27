@@ -21,7 +21,10 @@ Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animati
 - Vite als Build-Tool
 - Fake Store API für Produktdaten
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2c745ae (.)
 
 ## Nutzung
 Produkte durchsuchen mit der Suchleiste
