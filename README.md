@@ -2,7 +2,7 @@
 
 Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animationen.
 
-![screenshot](/public/bild.png)
+![screenshot](/bild.png)
 
 ## Funktionen
 
