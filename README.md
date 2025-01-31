@@ -4,6 +4,8 @@ Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animati
 
 ![screenshot](/screely-.png)
 
+https://superfakeandnotrealstore.netlify.app/
+
 ## Funktionen
 
 - Dynamische Produktkarten mit Bildern und Beschreibungen
