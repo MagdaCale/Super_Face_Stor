@@ -8,7 +8,7 @@ const mensClothingButton = document.querySelector('#mens-clothing-button')!
 const womensClothingButton = document.querySelector('#womens-clothing-button')!
 
 
-const API = "https://fakestoreapi.com/products"
+const API: string = "https://fakestoreapi.com/products"
 
 
 async function fetchProducts() {
