@@ -1,4 +1,4 @@
-# Super Fake Store 🛍️
+**Live-Demo:** [Super Fake Store 🛍️](https://superfakeandnotrealstore.netlify.app/)
 
 Ein moderner Online-Shop mit dynamischer Produktanzeige und interaktiven Animationen.
 
